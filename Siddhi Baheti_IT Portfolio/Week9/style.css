@@ -1,0 +1,70 @@
+body{
+    background-color: #00bfff;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.header{
+    background-color: #ccaa66;
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px;
+    color: #330000;
+}
+div.footer{
+    background-color: #ccaa66;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    color: #330000;
+    position: relative;
+    top: -40.5%;
+}
+div.navigation{
+    background-color: #E8D882;
+    width: 25%;
+    height: 40%;
+    border-left: 2px solid black;
+}
+ol{
+    list-style: none;
+    margin: 0;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-left:20px;
+}
+ol li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+.content{
+    background-color: #f1e8b0;
+    width: 74%;
+    height: 40%;
+    border: 2px solid black;
+    padding-left: 10px;
+    position: relative;
+    left: 25%;
+    top: -40.5%;  
+    overflow:hidden;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Adjusts sp                               acing between the text and image */
+    align-items: flex-start; /* Aligns items to the start of the container */
+}
+
+.text-content {
+    flex: 1; /* Allows the text to take up the remaining space */
+    padding-right: 20px; /* Adds some space between the text and the image */
+}
+
+.image-content {
+    flex: 0;
+    padding: 4vh; 
+
+}

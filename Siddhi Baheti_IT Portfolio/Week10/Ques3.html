@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Division based on Marks</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const marks = parseInt(prompt("Enter your marks: "));
+        document.write("Your Marks: " + marks);
+        console.log("Your Marks: " + marks);
+        if (marks >= 80 && marks <= 100){
+            document.write("<br>You passed with Distinction!");
+            console.log("You passed with Distinction!");
+        }
+        else if (marks >= 60 && marks < 80){
+            document.write("<br>You passed with First Division!");
+            console.log("You passed with First Division!");
+        }
+        else if (marks >= 50 && marks < 60){
+            document.write("<br>You passed with Second Division!");
+            console.log("You passed with Second Division!");
+        }
+        else if (marks >= 40 && marks < 50){
+            document.write("<br>You passed with Third Division!");
+            console.log("You passed with Third Division!");
+        }
+        else if (marks >= 0 && marks < 40){
+            document.write("<br>You failed!");
+            console.log("You failed!");
+        }
+    </script>
+</body>
+</html>

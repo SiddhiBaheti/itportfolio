@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table, th, td{
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align:center;
+            vertical-align: top;
+        }
+        th{
+            background-color: #007c92;
+            color: white;
+        }
+        .odd {
+            background-color: #acc8d3;
+        }
+
+        .even {
+            background-color: #eaeff6;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="data-table" width="100%">
+        <tr>
+            <th>S.N.</th>
+            <th>Name</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Name 1</td>
+            <td>1.jpg</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Name 2</td>
+            <td>2.jpg</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Name 3</td>
+            <td>3.jpg</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Name 4</td>
+            <td>4.jpg</td>
+        </tr>
+    </table>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var table = document.getElementById("data-table");
+        var rows = table.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+        if (i % 2 === 0) {
+            rows[i].classList.add("even");
+        } else {
+            rows[i].classList.add("odd");
+        }
+        }
+        });
+    </script>
+</body>
+</html>

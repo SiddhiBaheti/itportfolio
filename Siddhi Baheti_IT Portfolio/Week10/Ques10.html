@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Rectangle</title>
+</head>
+<body>
+    <script>
+        function calulate_area_of_rectangle(length, breadth){
+            area = length * breadth;
+            return area;
+        }
+        var length = prompt("Enter the length of rectangle: ");
+        var breadth = prompt("Enter the breadth of rectangle: ");
+        area_of_rectangle = calulate_area_of_rectangle(length, breadth);
+        document.write("Length: ", length, "<br>");
+        document.write("Breadth: ", breadth,"<br>");
+        document.write("Area of rectangle: ", area_of_rectangle);
+    </script>
+</body>
+</html>
